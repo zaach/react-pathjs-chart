@@ -80,7 +80,7 @@ export default class BarChart extends  React.Component
         var textStyle = fontAdapt(options.axisX.label);
 
         var lines = chart.curves.map(function (c, i) {
-            var color = this.color(i % 3);
+            var color = this.color(i);
             var stroke = Colors.darkenColor(color);
             return (
                 <g key={"lines" + i}>
